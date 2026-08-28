@@ -28,7 +28,7 @@ tuit_t **trendingTopic(usuario_t *user,
 
 	if (cantidad == 0) { return NULL; }
 
-	tuit_t** tuitsSobresalientes = malloc(cantidad*sizeof(tuit_t*));
+	tuit_t** tuitsSobresalientes = malloc((cantidad+1)*sizeof(tuit_t*));
 	tuitsSobresalientes[cantidad] = NULL;
 
 	publicacion_t* pub = user->feed->first;
